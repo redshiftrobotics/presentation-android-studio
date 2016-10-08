@@ -8,6 +8,19 @@
   </head>
   <body>
     <article>
+      <section>
+        <h1>Hi</h1>
+      </section>
+      <section>
+        <h2>Who am I?</h2><br><img src="images/me.jpg" width="20%" height="auto">
+        <h3>Matt Kelsey</h3>
+        <h4>Junior - SAAS - Programmer - FTC 2856</h4>
+        <h4>matthewkelsey@seattleacademy.org | mattkelsey</h4>
+      </section>
+      <section>
+        <h1>Hardware</h1>
+        <h4>(I'll make it quick)</h4>
+      </section>
       <section><img src="images/hardware1.png"></section>
       <section><img src="images/hardware2.png"></section>
       <section><img src="images/hardware3.png"></section>
@@ -21,77 +34,67 @@
         <h3 class="bullet">IDE</h3>
         <h3 class="bullet">Java and XML</h3>
         <h3 class="bullet">Gradle</h3>
-        <h3 class="bullet">Compile and deliver application to phone</h3>
+        <h3 class="bullet">Compile and deliver application to <u>robot controller</u> phone</h3>
       </section>
       <section><img src="images/android.png" width="300px" height="300px"></section>
       <section>
         <h2 class="bullet">Java and XML</h2>
-        <h3 class="bullet">XML (E<strong>x</strong>stensible <strong>M</strong>arkup <strong>L</strong>anguage)</h3>
-        <h3 class="bullet">Java is very similar to C#</h3>
+        <h3 class="bullet">XML (e<u>X</u>stensible <u>M</u>arkup <u>L</u>anguage)</h3>
+        <h3 class="bullet">Java is syntactically very similar to C#</h3>
         <h3 class="bullet">All OpModes are written in Java</h3>
         <h3 class="bullet">FTC SDK is code written for FTC purposes (a library) that will be added to Java that allows us to more easily interface with the hardware on the robot.</h3>
       </section>
       <section>
-        <h2 class="bullet">Writing an Application</h2>
+        <h2>What you'll need</h2>
         <h3 class="bullet">Install Java Development Kit (JDK)</h3>
         <h3 class="bullet">Install Android Studio</h3>
         <h3 class="bullet">Install and Configure FTC SDK</h3>
         <h3 class="bullet">Configure Device</h3>
         <h3 class="bullet">Fix Problems</h3>
       </section>
-      <section>
-        <h2>Install Preparation</h2>
-        <h3 class="bullet"><a href="http://developer.android.com/sdk/index.html" target='_blank'>developers.android.com</a></h3>
-        <h3 class="bullet">But... this takes forever to download so...</h3>
-        <h3 class="bullet">Local Installation</h3>
-        <pre class="bullet">/SAASPackage-Win</pre>
-        <h3 class="bullet">or</h3>
-        <pre class="bullet">/SAASPackage-Mac</pre>
+      <section data-bespoke-backdrop="emphatic">
+        <h2 class="bullet">FTC SDK (Software Development Kit) Installation</h2>
+        <h3 class="bullet">Fork FTC SDK</h3><img src="images/fork.png" class="bullet">
+        <h3></h3>
+        <pre class="bullet">git clone https://github.com/[Team Github]/[your fork's name]</pre>
+        <h3 class="bullet">For example...</h3>
+        <pre class="bullet">git clone https://github.com/RedshiftRobotics/2856</pre>
       </section>
       <section>
-        <h2 class="bullet">System Requirments</h2>
+        <h1>Install Android Studio</h1>
+      </section>
+      <section>
+        <h2 class="bullet">System Requirements</h2>
         <h3 class="bullet">2GB of RAM, preferably more</h3>
-        <h3 class="bullet">JDK 7 or newer (It is recommended to have both JDK 7 and 8 to avoid compiling issues)</h3>
-        <h3 class="bullet">One metric ton of harddrive space</h3>
+        <h3 class="bullet">JDK 8 (JDK 7 works too... Installing both can be helpful if you have issues)</h3>
+        <h3 class="bullet">One metric ton of harddrive space.</h3>
       </section>
-      <section>
-        <h2 class="bullet">Installation</h2>
-        <h3 class="bullet">Run <code>/SAASPackage/android-studio-bundle-something</code></h3>
-        <h3 class="bullet">and <code>/SAASPackage/jdk-xxxx</code></h3>
-        <h3 class="bullet">Click 'Next' repeatedly.</h3>
-      </section>
-      <section>
-        <h2 class="bullet">Android Studio</h2>
-        <h3 class="bullet">Pick a theme any theme...</h3>
-        <h3 class="bullet">Press next until presented with this screen...</h3>
-      </section>
-      <section><img src="images/startscreen.png"></section>
-      <section>
+      <section data-bespoke-backdrop="emphatic"><img src="images/startscreen.png"></section>
+      <section data-bespoke-backdrop="emphatic">
         <h2 class="bullet">Select 'Import Project', not 'Import Code Sample'</h2>
-        <h3 class="bullet">Find where you stored the SAASPackage and navigate to the ftc_app-master folder inside.</h3>
+        <h3 class="bullet">Find the directory where you just cloned your fork of the FTC SDK</h3>
+      </section>
+      <section><img src="images/sdkmanager.png" class="bullet">
+        <h3 class="bullet">if this doens't show up, you have all the packages you need installed</h3>
       </section>
       <section>
-        <h2 class="bullet">SDK Manager Setup</h2><img src="images/sdkmanager.png" class="bullet">
-      </section>
-      <section>
-        <h2 class="bullet">Package Installation</h2><img src="images/deselect.png" class="bullet">
-      </section>
-      <section>
-        <h2 class="bullet">Packages You Will Need:</h2>
-        <pre class="bullet">Android 4.4.2 (API 19)</pre>
-        <pre class="bullet">Android SDK Build-tools 21.1.2</pre>
+        <h2 class="bullet">Packages You Will Need:</h2><br>
+        <pre class="bullet">Android 4.4.2 | 4.4.4 | 5.x.x | 6.x.x</pre>
+        <pre class="bullet">Build Tools for your version of Android</pre>
       </section>
       <section>
         <h2>Sneaky Buttons</h2><img src="images/accept.png">
       </section>
       <section>
         <h2 class="bullet">Phone Configuration</h2>
-        <h3 class="bullet">Initial Setup (possibly already done)</h3>
-        <h3 class="bullet">Sign into a Google Account</h3>
         <h3 class="bullet">Download FTC Drive Station</h3>
         <h3 class="bullet">Wifi Direct</h3>
         <h3 class="bullet">Enable USB Debugging</h3>
         <h3 class="bullet">Driver Installation</h3>
+      </section>
+      <section>
+        <h2>Let's take a look.</h2>
+        <h3>If you're reading through this after the fact just follow the instructions.</h3>
       </section>
       <section>
         <h2 class="bullet">WiFi Direct</h2>
@@ -115,45 +118,41 @@
         <h3 class="bullet">i.e. 2856-rc and 2856-ds</h3>
         <h3 class="bullet">Establish connection between devices</h3>
       </section>
-      <section>
-        <h2 class="bullet">USB Debugging</h2>
+      <section data-bespoke-backdrop="emphatic">
+        <h2 class="bullet">Developer Options</h2>
         <h3 class="bullet">Adds functionality to the communications between the Android device and the computer</h3>
-        <h3 class="bullet">Needs to be enabled in order to upload apps and recieve debugging information from the phone</h3>
+        <h3 class="bullet">Needs to be enabled in order to upload apps and receive debugging information from the phone</h3>
         <h3 class="bullet">
           <pre>Settings>About Phone</pre>
         </h3>
         <h3 class="bullet">Tap 'SW Version' 7 times</h3>
       </section>
-      <section>
+      <section data-bespoke-backdrop="emphatic">
         <h2 class="bullet">Enabling USB Debugging</h2>
         <h3 class="bullet">
           <pre>Settings>Developer Options>USB Debugging</pre>
         </h3>
       </section>
       <section>
-        <h2 class="bullet">Drivers (Windows Only)</h2><img src="images/driver.png" class="bullet">
-        <h3 class="bullet">Click on notification</h3>
-        <h3 class="bullet">Press next... A lot.</h3>
-      </section>
-      <section>
-        <h2 class="bullet">Device Manager</h2>
-        <h3 class="bullet">Open Start Menu, and open Device Manager</h3>
-        <h3 class="bullet">Find 'ADB Interface'</h3>
-        <h3 class="bullet">Right click, 'Update Driver Software'</h3>
-        <h3 class="bullet">Browse computer</h3>
-        <h3 class="bullet">Let me pick from a list of device drivers on my computer</h3>
+        <h2 class="bullet">Drivers (Windows Only)</h2><img src="images/driver.png" class="bullet"><br>
+        <h4 class="bullet">The phone will connect as a CD to the computer.</h4>
+        <h4 class="bullet">Browse to the Windows folder and run the autorun file</h4>
+        <h4 class="bullet">Press next... A lot.</h4>
       </section>
       <section>
         <h2 class="bullet">Ready to code!</h2>
         <h3>(finally)</h3>
       </section>
+      <section><img src="images/as.png"></section>
+      <section><img src="images/as2.png"></section>
+      <section><img src="images/as3.png"></section>
       <section>
         <h2 class="bullet">Useful Recources</h2>
         <h3 class="bullet">This presentation (http://saasrobotics.com/presentation-android-studio/)</h3>
-        <h3 class="bullet">Android Developers (<a href="developers.android.com" target="_blank">developers.android.com</a>)</h3>
+        <h3 class="bullet">Android Developers (<a href="https://developer.android.com/studio/intro/index.html" target="_blank">developers.android.com</a>)</h3>
         <h3 class="bullet">StackOverflow (<a href="www.stackoverflow.com" target="_blank">stackoverflow.com</a>) a.k.a Google</h3>
-        <h3 class="bullet">FTC Forums (<a href="ftcforum.usfirst.org" target="_blank">ftcforum.usfirst.org</a>)</h3>
-        <h3 class="bullet">Pushbot Guide (<a href="http://www3.usfirst.org/uploadedFiles/Robotics_Programs/FTC/Game_Info/2015/PushBot-Build-Guide.pdf">Click here</a>)</h3>
+        <h3 class="bullet">FTC Forums (<a href="http://ftcforum.usfirst.org" target="_blank">ftcforum.usfirst.org</a>)</h3>
+        <h3 class="bullet">FTC Control System Guide (<a href="http://www.firstwa.org/Portals/0/Programs/FTC/2016-2017/FTC%20Control%20Systems.pdf?ver=2016-09-16-161636-263">Click here</a>)</h3>
         <h3 class="bullet">Contact Us - saasrobotics@gmail.com</h3>
       </section>
     </article>
